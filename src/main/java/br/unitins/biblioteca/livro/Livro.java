@@ -1,4 +1,4 @@
-package br.untins.biblioteca.livro;
+package br.unitins.biblioteca.livro;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

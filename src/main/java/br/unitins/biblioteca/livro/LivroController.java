@@ -1,4 +1,4 @@
-package br.untins.biblioteca.livro;
+package br.unitins.biblioteca.livro;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
