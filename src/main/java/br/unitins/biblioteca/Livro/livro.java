@@ -1,20 +1,19 @@
 package br.unitins.biblioteca.Livro;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-
-public class livro {
+public class livro {  // Nome da classe deve começar com letra maiúscula
     @Id
-    Long idLivro;
-    String titulo;
-    String autor;
-    String editora;
-    int qtdPaginas;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idLivro; // Modificador de acesso 'private' adicionado
 
+    private String titulo;
+    private String autor;
+    private String editora;
+    private int qtdPaginas;
 }
