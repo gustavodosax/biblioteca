@@ -7,10 +7,10 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class livro {  // Nome da classe deve começar com letra maiúscula
+public class livro {  
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idLivro; // Modificador de acesso 'private' adicionado
+    private Long idLivro;
 
     private String titulo;
     private String autor;
